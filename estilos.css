@@ -1,16 +1,21 @@
-@font-face { font-family: minecraft; src: url('./fons/minecraft_font.ttf'); }
+@font-face { font-family: Minecraft; src: url('fons/minecraft/Minecraft.ttf'); }
 
 title{
     font-family: minecraft, serif;
 }
 
+.titulo{
+    display: flex;
+    background-color: #001a23;
+    align-items: center;
+    justify-content: space-around;
+}
 h1 {
     color: #16db65;
-    background-color: #001a23;
-    font-size: 40px;
-    font-family: minecraft, serif;
+    font-size: 60px;
+    font-family: Minecraft;
     margin-top: 0;
-    padding-bottom: 80px ;
+    padding: 30px ;
     text-align: center;
 
 }
@@ -34,15 +39,35 @@ h1 {
 
 .destacat{
     grid-column: span 2;
-
 }
 
 .destacado:hover{
     /*transform: translateY(-5px) scale(1.03);*/
     background-color: #29593a;
     color: white;
+
 }
 
 a {
     color: #16db65;
+    /*text-align: left;*/
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.carrito{
+    background-color: #001a23;
+    border-color: #001a23;
+    border-radius: 10px;
+    color: #16db65;
+    font-family: Minecraft;
+
+}
+.gb_total{
+    grid-column: span 2;
 }

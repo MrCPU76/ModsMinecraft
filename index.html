@@ -3,62 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <title>Los mejores mods de Minecraft para tu mundo </title>
-
+    <link rel="stylesheet" href="estilos.css">
+    <script type="application/javascript" src="index.js"></script>
 </head>
 <body>
-<h1>Los mejores mods de Minecraft para tu mundo</h1>
-</body>
-</html>
-<link rel="stylesheet" href="estilos.css">
+<div class="titulo">
+    <h1>Los mejores mods de Minecraft para tu mundo
+        <button type="button" class="carrito">
+            Inbox
+            <span id="comptadorProductes" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    0
+<!--    <span class="visually-hidden">unread messages</span>-->
+</span>
+            <img src="img/Minecart_JE4_BE2.webp" width="100" height="100" class="minecart">
+        </button>
+    </h1>
+</div>
 
 
 <div class="galeria">
     <div class="item destacado"><img src="img/bio.png" height="225" width="225"/>
-    <a href="https://modrinth.com/project/HXF82T3G">Biomes o' Plenty</a>
+        <div class="enlaces">
+            <a href="https://modrinth.com/project/HXF82T3G">Biomes o' Plenty</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('Add', 5.00)">Add 5GB</button></div>
     </div>
     <div class="item destacado"><img src="img/j.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/lfHFW1mp">JourneyMap</a>
-    </div>
-    <div class="item destacado"><img src="img/deco.png" height="225" width="225"/>
-        <a href="https://modrinth.com/project/IZJSgKZe">Decocraft</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 1.00)">Add 1GB</button></div>
+        </div>
 
+    <div class="item destacado"><img src="img/deco.png" height="225" width="225"/>
+        <div class="enlaces">
+        <a href="https://modrinth.com/project/IZJSgKZe">Decocraft</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 2.00)">Add 2GB</button></div>
     </div>
-    <div class="item destacado"><img src="img/ad astra.png" height="225" width="225"/>
-        <a href="https://modrinth.com/project/3ufwT9JF">AdAstra</a>
+    <div class="item destacado">
+        <img src="img/ad astra.png" height="225" width="225"/>
+        <div class="enlaces">
+            <a href="https://modrinth.com/project/3ufwT9JF">AdAstra</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 7.00)">Add 7GB</button></div>
     </div>
     <div class="item destacado"><img src="img/imm.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/tIm2nV03">Immersive</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 2.00)">Add 2GB</button></div>
     </div>
     <div class="item destacado"><img src="img/Spartan_Weaponry.png" height="225" width="225"/>
+        <div class="enlaces">
     <a href="https://modrinth.com/project/icU5P2Mk">Spartan</a>
-
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 2.00)">Add 2GB</button></div>
     </div>
     <div class="item destacado"><img src="img/OptiFine.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/PYmqSEl2">OptiFine</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 1.00)">Add 1GB</button></div>
     </div>
     <div class="item destacado"><img src="img/ja.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/u6dRKJwZ">JustEnoughItems</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 1.00)">Add 1GB</button></div>
     </div>
     <div class="item destacado"><img src="img/iron.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/P3iIrPH3">IronChest</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 2.00)">Add 2GB</button></div>
     </div>
     <div class="item destacado"><img src="img/ari.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/P0Mu4wcQ">Artifacts</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 2.00)">Add 2GB</button></div>
     </div>
     <div class="item destacado"><img src="img/ice.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/LVnvHVBp">IceandFire</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('', 1.00)">Add 8GB</button></div>
     </div>
     <div class="item destacado"><img src="img/secu.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/v8jzRtAt">Security</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('CocaCola', 1.00)">Add 4GB</button></div>
     </div>
     <div class="item destacado"><img src="img/create.png" height="225" width="225"/>
+        <div class="enlaces">
         <a href="https://modrinth.com/project/LNytGWDc">Create</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('CocaCola', 1.00)">Add 10GB</button></div>
     </div>
     <div class="item destacat destacado"><img src="img/spellbooks-title-small-background.png" height="225" width="650"/>
-        <a href="https://modrinth.com/project/s4OWxYQQ">Iron's Spells & Spellbooks</a>
+        <div class="enlaces">
+            <a href="https://modrinth.com/project/s4OWxYQQ">Iron's Spells & Spellbooks</a>
+            <button type="button" class="btn btn-primary" onclick="Comprar('CocaCola', 1.00)">Add 5GB</button></div>
     </div>
 
 
 </div>
 
+<div id="cistella"></div>
+
+
+</body>
+</html>
 <!-- cada mod que aparezca tendrá un enlace a la pagina web del mod-->
